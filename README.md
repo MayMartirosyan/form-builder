@@ -7,7 +7,7 @@ A customizable form builder built with **React**, allowing dynamic field creatio
 ## ✨ Features
 
 - **Live form preview** — See what your form looks like as you build it.
-- **Drag-and-drop UX** (if used).
+- **Drag-and-drop UX** drag-and-drop for reordering fields.
 - **Responsive layout** — Looks great on desktop and mobile.
 - **Custom field types** — Support for `text`, `number`, `checkbox`, `select`.
 - **Field validation** — Required fields, default values, error highlighting.
