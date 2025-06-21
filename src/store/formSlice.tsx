@@ -7,7 +7,7 @@ interface FormState {
 
 const initialState: FormState = {
   schema: {
-    id: 'default-form-id',
+    id: '1',
     name: '',
     fields: [],
   },
