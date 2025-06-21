@@ -16,6 +16,8 @@ import FormFieldConfig from './FormFieldConfig';
 import { useGetFormQuery, useSaveFormMutation } from '../store/formApi';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
 import { toast } from 'react-toastify';
+import Loader from '../uikit/Loader';
+
 
 const FormBuilder: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -62,6 +64,11 @@ const FormBuilder: React.FC = () => {
     newFields.splice(hoverIndex, 0, draggedField);
     dispatch(reorderFields(newFields));
   };
+
+
+  if(isFetching) {
+    return <Loader />
+  }
 
   return (
     <DndProvider backend={HTML5Backend}>

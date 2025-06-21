@@ -1,0 +1,36 @@
+/* src/components/Loader.scss */
+.app-loader {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: #ffffff;
+    font-weight: 500;
+  
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 6px solid #232a32;
+      border-top: 6px solid #ff5252;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 12px;
+    }
+  
+    span {
+      font-size: 1rem;
+      color: #9ca3af;
+    }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  
