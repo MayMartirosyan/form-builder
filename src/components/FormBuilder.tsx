@@ -71,13 +71,17 @@ const FormBuilder: React.FC = () => {
           <FormPreview />
         ) : (
           <>
-            <input
-              type="text"
-              placeholder="Form Name"
-              className="form-name-input"
-              value={schema.name}
-              onChange={(e) => dispatch(setFormName(e.target.value))}
-            />
+            <div className='form-name-input-wrapper'>
+              <label htmlFor="formName">Form Name</label>
+              <input
+                type="text"
+                id="formName"
+                placeholder="Form Name"
+                className="form-name-input"
+                value={schema.name}
+                onChange={(e) => dispatch(setFormName(e.target.value))}
+              />
+            </div>
 
             <div className="fields-container">
               {schema.fields.map((field, index) => (
