@@ -1,51 +1,38 @@
-# React + TypeScript + Vite
+# 🧱 Form Builder — React Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A customizable form builder built with **React**, allowing dynamic field creation and real-time form previewing. This project is designed to give full control over how forms are created, managed, and validated in a user-friendly UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Live form preview** — See what your form looks like as you build it.
+- **Drag-and-drop UX** (if used).
+- **Responsive layout** — Looks great on desktop and mobile.
+- **Custom field types** — Support for `text`, `number`, `checkbox`, `select`.
+- **Field validation** — Required fields, default values, error highlighting.
+- **Toast notifications** — Simple success/error toasts for feedback.
+- **Form submission ready** — Validated forms are toast-flagged for submission (data fetch can be plugged in).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## 🛠 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **React** (TypeScript)
+- **React Toastify** for notifications
+- **React DnD** — drag-and-drop for reordering fields.
+- **SCSS** for styling
+- **Redux Toolkit** for state management
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+---
 
-export default tseslint.config({
-  plugins: {
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+## 🚀 Getting Started
+
+Clone the project and install dependencies:
+
+```bash
+git clone https://github.com/MayMartirosyan/form-builder-frontend.git
+cd form-builder-frontend
+npm install
+
+Built with ❤️ by Mayis Martirosyan — built for flexibility, not complexity.
